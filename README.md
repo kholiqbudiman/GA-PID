@@ -27,7 +27,18 @@ Setiap generasi:
 - **Export CSV** dari tabel (sekali klik).
 
 ---
-
+## 🗂️ Struktur Folder
+.
+├─ pid_ga_streaming_earlystop.py
+├─ .gradio_tmp/                   # cache Gradio (otomatis)
+└─ pid_ga_runs/
+   └─ run_2025..._<id>/
+      ├─ 000_minOS.png
+      ├─ 001_minOS.png
+      ├─ ...
+      ├─ rows.json               # tabel ringkasan (auto-save tiap generasi)
+      └─ log_min_overshoot.csv   # auto-save saat berhenti
+---
 ## 🚀 Demo Cepat
 
 ```bash
