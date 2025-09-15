@@ -6,11 +6,9 @@
 ## Deskripsi Singkat: PID & Algoritma Genetika
 
 ### PID (Proportional–Integral–Derivative)
-**PID controller** adalah pengendali umpan-balik yang menghitung sinyal kendali dari kombinasi tiga aksi: proporsional (P), integral (I), dan derivatif (D) terhadap error \(e(t)=r(t)-y(t)\).
+**PID controller** adalah pengendali umpan-balik yang menghitung sinyal kendali dari kombinasi tiga aksi: proporsional (P), integral (I), dan derivatif (D) terhadap error (e(t)=r(t)-y(t)\).
 
-\[
-u(t) = K_p\,e(t) \;+\; K_i \int e(t)\,dt \;+\; K_d\,\frac{de(t)}{dt}
-\]
+<img width="370" height="72" alt="Screenshot 2025-09-15 124420" src="https://github.com/user-attachments/assets/d30ae1db-cfa1-4e7a-8719-39de47a81884" />
 
 - **P (Proportional)**: merespons sebanding dengan error saat ini → mempercepat menuju setpoint; terlalu besar dapat memicu **overshoot**/osilasi.  
 - **I (Integral)**: mengakumulasi error sebelumnya → **menghilangkan steady-state error**; berlebihan dapat memicu **windup** dan overshoot.  
